@@ -1,5 +1,8 @@
 FlatironVideos::Application.routes.draw do
 
+  # FOR BOOKMARKLET
+  get '/user' => 'sessions#signed_in'
+
   # AJAX FOR DELETE BUTTON
   get 'notes/delete_button' => 'notes#delete_button'
 

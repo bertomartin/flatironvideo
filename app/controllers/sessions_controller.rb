@@ -15,6 +15,18 @@ class SessionsController < ApplicationController
     end
   end
 
+  def signed_in
+    if current_user
+      respond_to do |f|
+        f.html {}
+        f.js {}
+      end
+      render text: "HI THERE!" 
+    else
+      redirect_to login_path
+    end
+  end
+
   def destroy
     reset_session
     redirect_to login_path

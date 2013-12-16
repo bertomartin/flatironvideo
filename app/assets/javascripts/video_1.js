@@ -45,6 +45,8 @@ $(document).ready(function(){
     });
   };
 
+  So for YouTube.com ==> $("meta").getAttribute("content") where property="og:url";
+
    // listen for resize of window for the timeline
   $( window ).resize(function() {
     $('.all_markers').html("");
