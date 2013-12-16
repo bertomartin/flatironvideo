@@ -15,6 +15,7 @@ class SessionsController < ApplicationController
     end
   end
 
+  # for bookmarklet
   def signed_in
     if current_user
       respond_to do |f|
